@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		649DB8622369AB4500039A87 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649DB8612369AB4500039A87 /* main.swift */; };
+		649DB8702369AF7E00039A87 /* FixedSizeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649DB86F2369AF7E00039A87 /* FixedSizeArray.swift */; };
+		649DB8722369BCAF00039A87 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649DB8712369BCAF00039A87 /* Array.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		649DB85E2369AB4500039A87 /* SwiftAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		649DB8612369AB4500039A87 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		649DB86F2369AF7E00039A87 /* FixedSizeArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedSizeArray.swift; sourceTree = "<group>"; };
+		649DB8712369BCAF00039A87 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,19 @@
 		649DB8602369AB4500039A87 /* SwiftAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
+				649DB86E2369ADDF00039A87 /* Arrays */,
 				649DB8612369AB4500039A87 /* main.swift */,
 			);
 			path = SwiftAlgorithms;
+			sourceTree = "<group>";
+		};
+		649DB86E2369ADDF00039A87 /* Arrays */ = {
+			isa = PBXGroup;
+			children = (
+				649DB8712369BCAF00039A87 /* Array.swift */,
+				649DB86F2369AF7E00039A87 /* FixedSizeArray.swift */,
+			);
+			path = Arrays;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +135,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				649DB8622369AB4500039A87 /* main.swift in Sources */,
+				649DB8722369BCAF00039A87 /* Array.swift in Sources */,
+				649DB8702369AF7E00039A87 /* FixedSizeArray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

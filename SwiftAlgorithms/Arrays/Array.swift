@@ -7,3 +7,26 @@
 //
 
 import Foundation
+
+var array = [3, 2, 4, 6, 10]
+
+func arrayTest() {
+    array.removeLast()
+    array.append(9)
+    
+    print(array)
+    print("Index of 4: \(array[4])")
+    
+    array.remove(at: 4)
+    print("Remove index 4: \(array)")
+    
+    array.reverse()
+    print("Reversed: \(array)")
+    
+    array.sort()
+    print("Array after sort: \(array)")
+}
+
+
+
+

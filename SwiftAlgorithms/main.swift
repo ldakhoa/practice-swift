@@ -8,5 +8,10 @@
 
 import Foundation
 
-print("Hello, World!")
+public func main() {
+//    var testArray = Array()
+    
+    arrayTest()
+}
 
+main()
