@@ -32,17 +32,58 @@ public func printLinkedList() {
     }
     print("List 2nd: \(list)")
     print("Count 2nd: \(list.count)")
-    
-    
-
-//    list.insert("swift", atIndex: 1)
-    
-    
-    
-//    print(list.nodeAt(0).value)
-//    print(list[1])
-//    print(list.isEmpty, list.first!.value, list.last!.value)
 
 }
 
-printLinkedList()
+public func printStack() {
+    let stack = Stack<Character>()
+    print(stack.isBalance("(("))
+    print(stack.isBalance("()"))
+    print(stack.isBalance("(]["))
+    print(stack.isBalance("(){[}"))
+    print(stack.isBalance("()[]{}"))
+}
+
+public func printQueueUsingArray() {
+    var queue = QueueUsingArray<String>()
+    queue.enqueue("Hi")
+    queue.enqueue("Hello")
+    queue.enqueue("Enqueue...")
+    print(queue.count)
+    print(queue)
+    
+    queue.dequeue()
+    queue.dequeue()
+    print(queue.isEmpty)
+    print(queue.count)
+    print(queue)
+    
+    var queue2 = QueueEfficiencyUsingArray<String>()
+    queue2.enqueue("hihihihiih")
+    queue2.enqueue("hohohohoho")
+    queue2.enqueue("Khoa")
+    print(queue2)
+    
+    queue2.dequeue()
+    print(queue2)
+}
+
+public func printQueueUsingList() {
+    var queue = QueueUsingLinkedList<Int>()
+    queue.enqueue(1)
+    queue.enqueue(5)
+    queue.enqueue(4)
+    queue.enqueue(3)
+    print(queue.isEmpty)
+    print(queue.count)
+    print(queue)
+    
+    queue.dequeue()
+    queue.dequeue()
+    print(queue)
+}
+
+//printLinkedList()
+//printStack()
+printQueueUsingArray()
+//printQueueUsingList()
